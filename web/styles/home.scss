@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components"; 
+@import "tailwindcss/utilities";
+@import "./colors.scss";
+@import "./fonts.scss";
+
+.jumbotron {
+  position: relative;
+  background: url('/main.png') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+  }
+
+  .title {
+    font-size: $title1;
+    line-height: 33px;
+    letter-spacing: -0.24px;
+    text-align: center;
+    font-weight: bold;
+    color: $white;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  }
+}

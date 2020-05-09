@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components"; 
+@import "tailwindcss/utilities";
+@import "./colors.scss";
+@import "./fonts.scss";
+
+.card {
+  min-width: 227px;
+  min-height: 194px;
+  padding: 30px 16px;
+  background-color: $white;
+
+  .contract {
+    background-color: $primary-main;
+    color: $white;
+    font-size: $regular;
+    border-radius: 5px;
+    padding: 1px 8px;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  .title {
+    font-size: $title2;
+    color: $primary-main;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: $large;
+    color: $grey-dark;
+  }
+
+  .keywords {
+    margin-top: 4px;
+  }
+
+  .keyword {
+    background-color: $grey-light;
+    color: $grey-dark;
+    font-size: $regular;
+    border-radius: 5px;
+    padding: 1px 8px;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+}
